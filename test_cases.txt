@@ -1,0 +1,192 @@
+START
+DECLARE x, y
+INPUT x, y
+PRINT x, y
+END
+
+
+_________________________________________
+
+START
+DECLARE a, b, c, result
+INPUT a, b, c
+result = (a + b) * c
+PRINT result
+END
+
+_______________________________________
+
+START
+DECLARE p, q, sum, product
+INPUT p, q
+sum = p + q
+product = p * q
+PRINT sum, product
+END
+
+
+___________________________________________
+
+START
+DECLARE x, y, sum
+INPUT x, y
+sum = add(x, y)
+PRINT sum
+END
+
+FUNCTION add(a, b)
+    RETURN a + b
+
+________________________________________________
+
+START
+DECLARE num, squared
+INPUT num
+FUNCTION square(x)
+    RETURN x * x
+squared = square(num)
+PRINT squared
+END
+
+FUNCTION square(x)
+    RETURN x * x
+
+
+
+____________________________________________________
+
+
+START
+DECLARE a, b, result
+INPUT a, b
+
+result = compare_numbers(a, b)
+
+IF (result > 0) {
+  PRINT a
+}
+ELSE IF (result < 0) {
+  PRINT b
+}
+ELSE {
+  PRINT result
+}
+
+END
+
+FUNCTION compare_numbers(x, y)
+DECLARE temp
+temp = x - y
+RETURN temp
+
+_________________________________________________________
+
+
+START
+DECLARE a, b, add, sub, mul, div
+INPUT a, b
+add = a + b
+sub = a - b
+mul = a * b
+div = a / b
+PRINT add, sub, mul, div
+END
+
+_________________________________________________________
+
+START
+DECLARE r, area
+INPUT r
+area = circle_area(r)
+PRINT area
+END
+
+FUNCTION circle_area(x)
+  RETURN 3.14 * x * x
+
+
+_______________________________________________________
+
+
+
+START
+DECLARE marks
+INPUT marks
+
+IF (marks >= 40) {
+  PRINT Pass
+}
+ELSE {
+  PRINT Fail
+}
+
+END
+
+________________________________________________________
+
+
+
+START
+DECLARE i, limit
+INPUT limit
+i = 1
+
+WHILE (i <= limit) {
+  PRINT i
+  i = i + 1
+}
+
+END
+
+
+__________________________________________
+
+START
+DECLARE x, result
+INPUT x
+result = square_plus_one(x)
+PRINT result
+END
+
+FUNCTION square_plus_one(a)
+  DECLARE sq
+  sq = square(a)
+  RETURN sq + 1
+
+FUNCTION square(b)
+  RETURN b * b
+
+________________________________________
+
+START
+DECLARE num, result
+INPUT num
+result = factorial(num)
+PRINT result
+END
+
+FUNCTION factorial(n)
+IF (n == 0) {
+  RETURN 1
+}
+ELSE {
+  RETURN n * factorial(n - 1)
+}
+
+
+________________________________________
+
+START
+DECLARE n, i, result
+INPUT n
+PRINT n
+
+FOR (i = 1; i <= n; i = i + 1) {
+  result = square(i)
+  PRINT result
+}
+
+END
+
+FUNCTION square(x)
+  RETURN x * x
